@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "jquery": true,
+        "es6": true
+    },
+    "globals": {
+        "videojs": false,
+        "inView": false
+    },
+    "extends":"eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module",
+    },
+    "rules": {
+        "block-spacing": 1, // 単一行ブロックの内側のスペースを強制、または禁止
+        "no-console":0, // コンソールを使用可にします
+        "no-debugger": 0, // debuggerを使用可にします
+        "curly": 1, // すべての制御分の中括弧({})の規則を指定
+        "no-invalid-regexp":2, // 正規表現に不正があった場合に警告
+        "no-mixed-spaces-and-tabs":[2,"smart-tabs"], // スペースとタブが混在していた場合に警告
+        "valid-typeof":2, // 不正なtypeof比較を警告します
+        "comma-dangle": [2, "never"], // 末尾がカンマで終了している場合に警告
+        "no-unused-vars":2, // 使用されていない変数を警告
+        "no-undef": 2, // 未定義変数を使用不可
+        "no-redeclare": 2, // 変数の再宣言を警告
+        "semi": [2, "always"], // 末尾にセミコロンがない場合に警告
+        "no-extra-semi": 0, // 不要なセミコロンを警告
+        "no-underscore-dangle": 0, // 0:off 1:warning 2:error
+        "quotes": [2, "single"], // ダブルクォーテーションを禁止
+        "guard-for-in": 1, // プロトタイプチェーンで継承されているプロパティをfor~inで呼び出すと含まれると警告
+        "no-eq-null": 2, // 型チェックのオペレータなしnullとの比較を禁止
+        "no-eval": 2, // eval()ｦ滅ｾﾖ
+        "no-multi-spaces": 2 // 複数スペースの使用を禁止
+    }
+}
