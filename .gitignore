@@ -1,0 +1,6 @@
+.idea
+.fusebox
+/node_modules/
+/view/js/
+/view/css/*.css
+
