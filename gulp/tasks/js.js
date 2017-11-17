@@ -3,7 +3,6 @@ import {FuseBox,BabelPlugin} from 'fuse-box';
 
 const path = require('path');
 
-let app;
 const rootpath = path.resolve();
 
 function bundle() {
@@ -17,9 +16,9 @@ function bundle() {
             })
         ]
     });
-    app = fuse.bundle('bundle').instructions('> common.js');
+    fuse.bundle('bundle').instructions('> common.ts');
     return fuse.run();
 }
 gulp.task('js', () => {
-    return bundle();
+     bundle();
 });

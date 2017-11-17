@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "./dist/",
+        "outDir": "/view/js",
         "sourceMap": true,
         "noImplicitAny": true,
         "module": "commonjs",
@@ -9,6 +9,6 @@
         "lib": ["dom", "es2015"]
     },
     "include": [
-        "./src/**/*"
+        "./src/js/**/*"
     ]
 }

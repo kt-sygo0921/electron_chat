@@ -3,11 +3,11 @@ import browserSync from 'browser-sync';
 import runSequence from 'run-sequence';
 
 gulp.task('watch', ['server'], () => {
-    gulp.watch(['./src/js/**/*.js'], () => {
+    gulp.watch(['./src/js/**/*.ts'], () => {
         runSequence('js', browserSync.reload);
     });
     gulp.watch(['./src/sass/**/*.scss'], () => {
-        runSequence('sass', 'css', 'hologram', browserSync.reload);
+        runSequence('sass', 'css', browserSync.reload);
     });
     gulp.watch(['./src/ejs/**/*.ejs'], () => {
         runSequence('ejs', browserSync.reload);
