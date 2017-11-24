@@ -10,13 +10,14 @@ function bundle() {
         homeDir: `${rootpath}/src/js/`,
         output: `${rootpath}/view/js/$name.js`,
         target: 'browser',
+        sourceMaps: true,
         plugins:[
             BabelPlugin({
                 presets:['es2015','react']
             })
         ]
     });
-    fuse.bundle('bundle').instructions('> common.ts');
+    fuse.bundle('bundle').instructions('> app.tsx');
     return fuse.run();
 }
 gulp.task('js', () => {

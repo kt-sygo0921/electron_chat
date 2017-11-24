@@ -6,7 +6,8 @@
         "module": "commonjs",
         "target": "es5",
         "jsx": "react",
-        "lib": ["dom", "es2015"]
+        "lib": ["dom", "es2015"],
+        "typeRoots" : ["./node_modules/@types","./node_modules/firebase"]
     },
     "include": [
         "./src/js/**/*"
