@@ -13,7 +13,8 @@ const SIGNUP_LINK_STYLE = {
     marginLeft: 10
 };
 
-export default class Login extends React.Component {
+export default class Login extends React.Component<any,any> {
+    error: any;
     constructor(props:any) {
         super(props);
         this.state = {

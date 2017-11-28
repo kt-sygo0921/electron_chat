@@ -12,7 +12,7 @@ const CANCEL_BUTTON_STYLE = {
     marginLeft: 10
 };
 
-export default class Signup extends React.Component {
+export default class Signup extends React.Component<any,any> {
     constructor(props:any) {
         super(props);
         this.state = {

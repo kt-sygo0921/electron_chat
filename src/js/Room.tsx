@@ -8,6 +8,11 @@ const ROOM_STYLE = {
 };
 
 export default class Room extends React.Component<any,any> {
+    user:any;
+    db:any;
+    fbChatRoomRef:any;
+    stream: any;
+    room: any;
     constructor(props:any) {
         super(props);
         this.state = {

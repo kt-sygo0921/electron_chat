@@ -22,6 +22,7 @@ interface Rooms_state {
 }
 
 export default class Rooms extends React.Component<any,Rooms_state> {
+    db: any;
     constructor(props:any) {
         super(props);
         this.state = {
